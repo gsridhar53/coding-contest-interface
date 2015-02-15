@@ -1,0 +1,28 @@
+1
+
+1
+
+Addition of two numbers
+
+Given two numbers, output the sum of those two numbers
+
+There first line of input contains an integer T - the number of test cases.
+Then T test cases follow.
+For each test case there will be integers N and M
+
+For each test case output the sum of the two numbers
+
+1000<=T<=1000
+-10000<=N<=10000
+-10000<=M<=10000
+
+Input:
+3
+-10 5
+10 10
+100 -1
+
+Output:
+-5
+20
+99
