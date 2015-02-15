@@ -33,7 +33,7 @@ CREATE TABLE `leaderboard` (
   PRIMARY KEY (`id`),
   KEY `team` (`team`),
   CONSTRAINT `leaderboard_ibfk_1` FOREIGN KEY (`team`) REFERENCES `users` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,6 @@ CREATE TABLE `leaderboard` (
 
 LOCK TABLES `leaderboard` WRITE;
 /*!40000 ALTER TABLE `leaderboard` DISABLE KEYS */;
-INSERT INTO `leaderboard` VALUES (1,'admin',1,3,5,9272,9);
 /*!40000 ALTER TABLE `leaderboard` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -72,7 +71,7 @@ CREATE TABLE `questions` (
 
 LOCK TABLES `questions` WRITE;
 /*!40000 ALTER TABLE `questions` DISABLE KEYS */;
-INSERT INTO `questions` VALUES (1,1,'Addition of two numbers','Given two numbers, output the sum of those two numbers','There first line of input contains an integer T - the number of test cases.\r\nThen T test cases follow.\r\nFor each test case there will be integers N and M','For each test case output the sum of the two numbers','1000<=T<=1000\r\n-10000<=N<=10000\r\n-10000<=M<=10000','Input:\r\n3\r\n-10 5\r\n10 10\r\n100 -1\r\n\r\nOutput:\r\n-5\r\n20\r\n99'),(2,3,'Subtraction of two numbers','Given two numbers, output the difference of those two numbers','There first line of input contains an integer T - the number of test cases.\r\nThen T test cases follow.\r\nFor each test case there will be integers N and M','For each test case output the sum of the two numbers','1000<=T<=1000\r\n-10000<=N<=10000\r\n-10000<=M<=10000','Input:\r\n5\r\n10 20\r\n5 5\r\n5 -5\r\n0 0\r\n100 -1\r\n\r\nOutput:\r\n-10\r\n0\r\n10\r\n0\r\n101'),(3,5,'Largest of two numbers','Given two numbers, output the larger of those two numbers','There first line of input contains an integer T - the number of test cases.\r\nThen T test cases follow.\r\nFor each test case there will be integers N and M\r\n','For each test case output the sum of the two numbers','1000<=T<=1000\r\n-10000<=N<=10000\r\n-10000<=M<=10000\r\n','Input:\r\n5\r\n10 20\r\n50 50\r\n0 -1\r\n-20 -30\r\n5 0\r\n\r\nOutput:\r\n20\r\n50\r\n0\r\n-20\r\n5');
+INSERT INTO `questions` VALUES (1,1,'Addition of two numbers','Given two numbers, output the sum of those two numbers','There first line of input contains an integer T - the number of test cases.\r\nThen T test cases follow.\r\nFor each test case there will be integers N and M','For each test case output the sum of the two numbers','1000<=T<=1000\r\n-10000<=N<=10000\r\n-10000<=M<=10000','Input:\r\n3\r\n-10 5\r\n10 10\r\n100 -1\r\n\r\nOutput:\r\n-5\r\n20\r\n99'),(2,3,'Subtraction of two numbers','Given two numbers, output the difference of those two numbers','There first line of input contains an integer T - the number of test cases.\r\nThen T test cases follow.\r\nFor each test case there will be integers N and M','For each test case output the sum of the two numbers','1000<=T<=1000\r\n-10000<=N<=10000\r\n-10000<=M<=10000','Input:\r\n5\r\n10 20\r\n5 5\r\n5 -5\r\n0 0\r\n100 -1\r\n\r\nOutput:\r\n-10\r\n0\r\n10\r\n0\r\n101'),(3,5,'Largest of two numbers','Given two numbers, output the larger of those two numbers','There first line of input contains an integer T - the number of test cases.\r\nThen T test cases follow.\r\nFor each test case there will be integers N and M','For each test case output the sum of the two numbers','1000<=T<=1000\r\n-10000<=N<=10000\r\n-10000<=M<=10000','Input:\r\n5\r\n10 20\r\n50 50\r\n0 -1\r\n-20 -30\r\n5 0\r\n\r\nOutput:\r\n20\r\n50\r\n0\r\n-20\r\n5');
 /*!40000 ALTER TABLE `questions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -100,7 +99,6 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('admin','Sridhar','admin123','7 CS','8867572063','g.sridhar53@gmail.com');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -113,4 +111,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-02-09 18:36:05
+-- Dump completed on 2015-02-15 10:58:58
