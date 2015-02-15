@@ -1,0 +1,5 @@
+# Ignore the uploads to be present in the repository
+*
+
+# Include the .gitignore file in the repository so that the folder is still tracked
+!.gitignore
