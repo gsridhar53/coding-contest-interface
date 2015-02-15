@@ -1,6 +1,12 @@
 
+Either use the database dump present in the database folder or initialize a new database
+
+Steps to dump the database:
+1.	Drop the existing database names "coding" and create a new one
+2.	The database dump is present in "databse/addedQuestions.sql". Use "mysqldump"
+OR
 Steps to initialize the database:
-1.	Run the "database/init.sql"
+1.	Run the "database/init.sql" (First remove the database named "coding" )
 2.	Run the "add_ques/index.php" in the browser and insert the test questions in the "add_ques/Sample\ Questions" folder
 
 Steps to initialize the interface:
